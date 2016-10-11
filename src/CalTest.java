@@ -30,4 +30,13 @@ public class CalTest {
 		assertThat(add1, is(5));
 
 	}
+	@Test
+	public void stringAddsMultiValuesTogether() {
+		Calculator cal = new Calculator();
+		int add1 = cal.add("2,3,3");
+		assertThat(add1, is(8));
+
+	}
+
 }
+
